@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="suite">
+<parameter name="text" value="test"/>
+<listeners>
+<listener class-name="testnginselenium.Listeners">
+</listener>
+</listeners>
+<test name="test">
+<groups>
+<run>
+<exclude name="local">
+</exclude>
+</run>
+</groups>
+<classes>
+<class name="testnginselenium.Alretintestng"/>
+<class name="testnginselenium.Createtestngfile">
+</class>
+</classes>
+</test>
+</suite>
